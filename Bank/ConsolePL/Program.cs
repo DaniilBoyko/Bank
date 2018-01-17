@@ -23,6 +23,12 @@ namespace ConsolePL
 
             try
             {
+                foreach (var type in accountService.GetAllTypes())
+                {
+                    Console.WriteLine($"{type.Type}\n");
+                }
+
+                /*
                 Console.WriteLine("-----CREATE NEW USERS-----");
                 //userService.CreateUser("Kostya", "Trush", "kostya.trush.2010@mail.ru", "111111");
                 //accountService.CreateNewAccount("Base", "daniil.boyko.2010@mail.ru", 1003);
@@ -56,6 +62,8 @@ namespace ConsolePL
                 Console.WriteLine("----GET USER BY EMAIL AND PASSWORD-----");
                 var user = userService.GetUser("daniil.boyko.2010@mail.ru", "501466");
                 Console.WriteLine($"Name: {user.Name}:\nSurname: {user.Surname}\nEmail: {user.Email}\nPassword: {user.Password}\n");
+
+    */
             }
             catch (Exception e)
             {
