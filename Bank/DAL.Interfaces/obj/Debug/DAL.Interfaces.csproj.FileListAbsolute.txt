@@ -15,4 +15,3 @@ D:\Bank\Bank\DAL.Interfaces\bin\Debug\DAL.Interfaces.pdb
 D:\Bank\Bank\DAL.Interfaces\obj\Debug\DAL.Interfaces.csproj.CoreCompileInputs.cache
 D:\Bank\Bank\DAL.Interfaces\obj\Debug\DAL.Interfaces.dll
 D:\Bank\Bank\DAL.Interfaces\obj\Debug\DAL.Interfaces.pdb
-D:\Bank\Bank\DAL.Interfaces\obj\Debug\DAL.Interfaces.csprojResolveAssemblyReference.cache
