@@ -1,0 +1,13 @@
+﻿@model Bank.Models.AccountViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+@Html.Partial("_ShowAccount", Model)
+
+<div>
+    @Html.ActionLink("Back to the account", "Account", new { id = Model.Id })
+</div>

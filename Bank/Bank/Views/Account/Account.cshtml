@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Account";
+}
+
+<div class="row">
+    <div class="col-md-6 margin-top-20">
+        <a href="@Url.Action("Withdraw", "Account")" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-circle-arrow-up"></span> Withdraw</a>
+        <a href="@Url.Action("Deposit", "Account")" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-circle-arrow-down"></span> Deposit</a>
+        <a href="@Url.Action("Details", "Account")" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-question-sign"></span> Account Inquery</a>
+    </div>
+    <div class="col-md-6 margin-top-20">
+        <a href="@Url.Action("Transfer", "Account")" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-transfer"></span> Transfer Money</a>
+        <a href="@Url.Action("Print", "Account")" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-print"></span> Print</a>
+        <a href="@Url.Action("Delete", "Account")" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-remove"></span> Delete Account</a>
+    </div>
+</div>
+
+<div>
+    @Html.ActionLink("Back to accounts", "Accounts", "Account")
+</div>
+
+

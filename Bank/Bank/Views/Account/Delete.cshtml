@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>@ViewBag.Message</h3>
+
+@if (ViewBag.Err != null)
+{
+    <div>
+        @Html.ActionLink("Back to the account", "Account", new { id = int.Parse(Session["CurrentAccId"].ToString()) })
+    </div>
+}
+else
+{
+    <div>
+        @Html.ActionLink("Back to accounts", "Accounts", "Account")
+    </div>
+}

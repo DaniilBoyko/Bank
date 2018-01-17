@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Middle Valley Community Bank</h1>
+    <p class="lead">Middle Valley Community Bank offers the creation of accounts and 
+    different operations with it. Give it a try today! </p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Powere by ASP.NET</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Register</h2>
+        <p>
+            Open an account with us
+        </p>
+        <p>@Html.ActionLink("Register", "Register", "Account", null, new {@class = "btn btn-default"})</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Log in</h2>
+        <p>Access your existing account</p>
+        <p>@Html.ActionLink("Log in", "Login", "Account", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>

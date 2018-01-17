@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Bank.Models.AccountViewModel>
+
+@{
+    ViewBag.Title = "LoggedIn";
+}
+
+<h2>Hello, @Session["Name"]</h2>
+@if (Model == null || !Model.Any())
+{
+    <h4>You don't yet have accounts</h4>
+
+}   
+else
+{
+    <h4>Your Accounts:</h4>
+
+    foreach (var account in Model)
+    {
+        @Html.Partial("_ShowAccount", account)
+    }
+}
+
+<div>
+    @Html.ActionLink("Create new Account", "Create", "Account", null, new { @class = "btn btn-default" })
+</div>
+
