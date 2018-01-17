@@ -23,6 +23,7 @@ namespace ConsolePL
 
             try
             {
+                //accountService.CreateNewType("Platinum");
                 foreach (var type in accountService.GetAllTypes())
                 {
                     Console.WriteLine($"{type.Type}\n");

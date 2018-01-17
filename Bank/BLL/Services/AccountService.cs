@@ -8,6 +8,7 @@ using BLL.Interfaces.Entities.Exceptions;
 using BLL.Interfaces.Services;
 using BLL.Mappers;
 using BLL.Models;
+using DAL.Interfaces.DTO;
 using DAL.Interfaces.Repository;
 
 namespace BLL.Services
@@ -170,6 +171,18 @@ namespace BLL.Services
             }
 
             return false;
+        }
+
+        /// <inheritdoc cref="IAccountService.CreateNewType"/>
+        public void CreateNewType(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                throw new ArgumentNullException(nameof(name));
+            }
+
+            AccountTypeRepository.Create(new DalAccountType(){Type = name});
+            UnitOfWork.Commit();
         }
 
         #endregion // !public Methods

@@ -71,5 +71,11 @@ namespace BLL.Interfaces.Services
         /// <param name="toId">id of to account</param>
         /// <param name="amount">amount of transfer</param>
         bool Transfer(int fromId, int toId, double amount);
+
+        /// <summary>
+        /// Create new type of the account.
+        /// </summary>
+        /// <param name="name">name of the type</param>
+        void CreateNewType(string name);
     }
 }
