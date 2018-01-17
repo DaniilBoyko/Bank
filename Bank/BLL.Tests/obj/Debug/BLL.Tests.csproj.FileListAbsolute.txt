@@ -55,3 +55,6 @@ D:\Bank\Bank\BLL.Tests\obj\Debug\BLL.Tests.csprojResolveAssemblyReference.cache
 D:\Bank\Bank\BLL.Tests\obj\Debug\BLL.Tests.csproj.CoreCompileInputs.cache
 D:\Bank\Bank\BLL.Tests\obj\Debug\BLL.Tests.dll
 D:\Bank\Bank\BLL.Tests\obj\Debug\BLL.Tests.pdb
+D:\Bank\Bank\BLL.Tests\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Bank\Bank\BLL.Tests\bin\Debug\System.ValueTuple.dll
+D:\Bank\Bank\BLL.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
